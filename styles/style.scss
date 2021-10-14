@@ -71,6 +71,8 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background-color: cornflowerblue;
+    position: relative;
+
 }
 .header {
     background: url(../images/background.jpg) center no-repeat;
@@ -108,7 +110,6 @@ body {
         & span {
             cursor: pointer;
             display: inline-block;
-            position: relative;
             transition: 0.4s;
         }
         & span::after {
@@ -139,7 +140,7 @@ body {
         max-width: 616px;
         margin-top: 130.96px;
         height: 100%;
-        margin-bottom: 220px / 811px *100%;
+        margin-bottom: 210px / 811px *100%;
     }
     &__content-01 {
         margin: 0;
@@ -157,5 +158,28 @@ body {
         margin-bottom: 24px;
         @extend %fontsTitle;
         color: #FFFFFF;
+    }
+}
+.banner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 902px / 1015px *100%;
+    width: 1276px / 1440px *100%;
+    right: 0;
+    background-color: #FFFFFF;
+    &__box {
+        height: 227px;
+        margin-right: 166px / 1276px *100%;
+        margin-left: 65px / 1276px *100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    img {
+        width: 156px;
+        height: 113px;
     }
 }

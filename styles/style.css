@@ -47,6 +47,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   background-color: cornflowerblue;
+  position: relative;
 }
 
 .header {
@@ -108,7 +109,6 @@ body {
 .header .btn span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -145,7 +145,7 @@ body {
   max-width: 616px;
   margin-top: 130.96px;
   height: 100%;
-  margin-bottom: 27.127%;
+  margin-bottom: 25.89396%;
 }
 
 .header__content-01 {
@@ -163,5 +163,43 @@ body {
   margin-top: 22px;
   margin-bottom: 24px;
   color: #FFFFFF;
+}
+
+.banner {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 88.867%;
+  width: 88.61111%;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+.banner__box {
+  height: 227px;
+  margin-right: 13.0094%;
+  margin-left: 5.09404%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner img {
+  width: 156px;
+  height: 113px;
 }
 /*# sourceMappingURL=style.css.map */
