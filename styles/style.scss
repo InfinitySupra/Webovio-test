@@ -252,8 +252,12 @@ section {
 .section__btn {
     color: #D4D6D4;
     width: 197px;
+    transition: .2s;
+    &:hover {
+        color: #FFD723;
+    }
     & span::after {
-        background-color:#D4D6D4;
+        background-color:#FFD723;
     }
 }
 .section__message-box {
@@ -372,14 +376,12 @@ section {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width: 100%;
     position: relative;
     margin-left: 172px;
 }
 .nameCard2 {
     margin-top: 380px;
-    margin-left: 665 / 1440 *100%;
-    margin-right: 454 / 1440 *100%;
+    right: 322 / 1268 *100%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -438,7 +440,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 453px;
-    height: 243px;
+    height: 210px;
     background: #FFFFFF;
     box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
     border-radius: 8px;
@@ -450,7 +452,7 @@ section {
     }
     .person3 {
         margin-left: 30px;
-        background: url(../images/face/face4.png) 135% 22% no-repeat;
+        background: url(../images/face/face4.png) 148% 17% no-repeat;
         width: 230px;
         height: 50px;
     }
@@ -476,3 +478,60 @@ section {
     height: 550px;
 }
 // ---------------------------------------------------------------
+.subtitle {
+    margin-top: 335px;
+    h2 {
+        @extend %fontsSubtitle700;
+        width: 607px;
+    }
+}
+.block {
+    padding-left: 195px;
+    margin-top: 87px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+.section__block {
+    width: 194px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    h3 {
+        @extend %fontsSubtitle500; 
+        margin: 0;
+    }
+    p {
+        @extend %fontsMain;
+        font-size: 14px;  
+    }
+}
+.section__bottom {
+    position: absolute;
+    width: 1275px;
+    height: 362px;
+    left: 0;
+    margin-top: 370px;
+    background: #FAFAFA;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+    .bottom_title {
+        max-width: 882px;
+        margin-top: 70px;
+        margin-left: 164px;
+    }
+    h1 {
+        @extend %fontsSubtitle700;
+        font-size: 60px;
+        line-height: 74px;
+        margin-bottom: 50px;
+    }
+}
+// ---------------------------------------------------------------
+footer {
+    width: 100%;
+    height: 100%;
+    background-color:#4F553D;
+}
